@@ -2,6 +2,7 @@
 @import "_globals";
 
 //mobile-first approach
+
 .flex { //flexbox
     display: flex;
     flex-direction: column;
@@ -122,7 +123,10 @@
 @media (min-width: 87.5rem) { //desktop changes
 
     body {
+        background-color: $paleBlue;
         background-image: url("/app/images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .flex {
