@@ -24,6 +24,10 @@ body {
     justify-content: center;
     margin: auto 20px;
     height: 100vh;
+
+    background-image: url("/app/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 // Flexbox
 .flex {
@@ -40,3 +44,4 @@ body {
     background-color: white;
     border-radius: 1.5625rem;
 }
+

@@ -42,7 +42,7 @@
         flex-direction: column;
 
         .ap {
-            font-weight: 700;
+            font-weight: 900;
             font-size: 1rem;
         }
 
@@ -54,10 +54,26 @@
 
     }
 
-    span {
+    button {
         margin-right: 2rem;
         margin-left: auto;
+        border: none;
+        background: none;
+        font-family: $font;
+        font-weight: 600;
+        font-size: .85rem;
+        color: $brightBlue;
+        text-decoration: underline;
+
     }
+
+    button:hover {
+        cursor: pointer;
+        color: hsla(245, 75%, 52%, 0.5);
+        text-decoration: none;
+    }
+
+
 }
 
 .btn {
@@ -66,13 +82,23 @@
     height: 3.125rem;
     width: 22.1875rem;
     color: white;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 500;
+    font-family: $font;
+    font-weight: 900;
     border-radius: 1rem;
     border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: hsla(245, 75%, 52%, 0.5);
 }
 
 .cancel {
     color: $desaturateBlue;
     font-weight: 700;
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: black;
 }
