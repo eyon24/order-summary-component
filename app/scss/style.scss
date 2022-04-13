@@ -1,0 +1,78 @@
+@import "_variables";
+@import "_globals";
+
+
+.header-img {
+    border-top-left-radius: 1.5625rem;
+    border-top-right-radius: 1.5625rem;
+}
+
+.osHeader {
+    margin-top: 2.625rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+
+.description {
+    margin-left: 4.75rem;
+    margin-right: 4.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $desaturateBlue;
+}
+
+.annual-plan-container {
+    background-color: $veryPaleBlue;
+    width: 22.1875rem;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+
+    img {
+        // height: 3.125rem;
+        // width: 3.125rem;
+        margin: 1rem;
+    }
+
+    .price-container {
+        display: flex;
+        flex-direction: column;
+
+        .ap {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .price {
+            font-weight: 500;
+            font-size: 1rem;
+            color: $desaturateBlue
+        }
+
+    }
+
+    span {
+        margin-right: 2rem;
+        margin-left: auto;
+    }
+}
+
+.btn {
+    margin: 2rem;
+    background-color: $brightBlue;
+    height: 3.125rem;
+    width: 22.1875rem;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    border-radius: 1rem;
+    border: none;
+}
+
+.cancel {
+    color: $desaturateBlue;
+    font-weight: 700;
+}

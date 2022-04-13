@@ -1,0 +1,135 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-color: #e0e8ff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 20px;
+  height: 100vh;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 28.1875rem;
+  height: 43rem;
+  background-color: white;
+  border-radius: 1.5625rem;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-img {
+  border-top-left-radius: 1.5625rem;
+  border-top-right-radius: 1.5625rem;
+}
+
+.osHeader {
+  margin-top: 2.625rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 1.75rem;
+}
+
+.description {
+  margin-left: 4.75rem;
+  margin-right: 4.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7280a7;
+}
+
+.annual-plan-container {
+  background-color: #f5f7ff;
+  width: 22.1875rem;
+  height: 6.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+}
+
+.annual-plan-container img {
+  margin: 1rem;
+}
+
+.annual-plan-container .price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.annual-plan-container .price-container .ap {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.annual-plan-container .price-container .price {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #7280a7;
+}
+
+.annual-plan-container span {
+  margin-right: 2rem;
+  margin-left: auto;
+}
+
+.btn {
+  margin: 2rem;
+  background-color: #3829e0;
+  height: 3.125rem;
+  width: 22.1875rem;
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  border-radius: 1rem;
+  border: none;
+}
+
+.cancel {
+  color: #7280a7;
+  font-weight: 700;
+}
