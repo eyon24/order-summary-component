@@ -30,7 +30,7 @@ body {
           justify-content: center;
   margin: auto 20px;
   height: 100vh;
-  background-image: url("/app/images/pattern-background-desktop.svg");
+  background-image: url("/app/images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -44,10 +44,16 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  width: 28.1875rem;
-  height: 43rem;
+  width: 20.625rem;
+  height: 35.625rem;
   background-color: white;
   border-radius: 1.5625rem;
+}
+
+.flex .header-img {
+  max-width: 100%;
+  border-top-left-radius: 1.5625rem;
+  border-top-right-radius: 1.5625rem;
 }
 
 .flex-ai-c {
@@ -56,22 +62,14 @@ body {
           align-items: center;
 }
 
-.header-img {
-  border-top-left-radius: 1.5625rem;
-  border-top-right-radius: 1.5625rem;
-}
-
 .osHeader {
-  margin-top: 2.625rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   font-weight: 900;
-  font-size: 1.75rem;
+  font-size: 1.35rem;
 }
 
 .description {
-  margin-left: 4.75rem;
-  margin-right: 4.75rem;
-  margin-bottom: 1rem;
+  margin: 2rem;
   font-size: 1rem;
   font-weight: 500;
   color: #7280a7;
@@ -79,8 +77,8 @@ body {
 
 .annual-plan-container {
   background-color: #f5f7ff;
-  width: 22.1875rem;
-  height: 6.25rem;
+  width: 17.5rem;
+  height: 5.3125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,17 +104,17 @@ body {
 
 .annual-plan-container .price-container .ap {
   font-weight: 900;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .annual-plan-container .price-container .price {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: .9rem;
   color: #7280a7;
 }
 
 .annual-plan-container button {
-  margin-right: 2rem;
+  margin-right: .5rem;
   margin-left: auto;
   border: none;
   background: none;
@@ -134,10 +132,11 @@ body {
 }
 
 .btn {
-  margin: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   background-color: #3829e0;
   height: 3.125rem;
-  width: 22.1875rem;
+  width: 17.5rem;
   color: white;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
@@ -153,9 +152,46 @@ body {
 .cancel {
   color: #7280a7;
   font-weight: 700;
+  font-size: 0.875rem;
 }
 
 .cancel:hover {
   cursor: pointer;
   color: black;
+}
+
+@media (min-width: 87.5rem) {
+  body {
+    background-image: url("/app/images/pattern-background-desktop.svg");
+  }
+  .flex {
+    width: 28.1875rem;
+    height: 43rem;
+  }
+  .osHeader {
+    font-weight: 900;
+    font-size: 1.75rem;
+  }
+  .description {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .annual-plan-container {
+    background-color: #f5f7ff;
+    width: 22.1875rem;
+    height: 6.25rem;
+  }
+  .annual-plan-container .price-container .ap {
+    font-size: 1rem;
+  }
+  .annual-plan-container .price-container .price {
+    font-size: 1rem;
+  }
+  .annual-plan-container button {
+    margin-right: 2rem;
+  }
+  .btn {
+    margin: 2rem;
+    width: 22.1875rem;
+  }
 }

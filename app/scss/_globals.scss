@@ -25,23 +25,9 @@ body {
     margin: auto 20px;
     height: 100vh;
 
-    background-image: url("/app/images/pattern-background-desktop.svg");
+    background-image: url("/app/images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
-// Flexbox
-.flex {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 28.1875rem;
-    height: 43rem;
 
-    &-ai-c {
-        align-items: center;
-    }
-
-    background-color: white;
-    border-radius: 1.5625rem;
-}
 

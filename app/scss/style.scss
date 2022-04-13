@@ -1,23 +1,37 @@
 @import "_variables";
 @import "_globals";
 
+//mobile-first approach
+.flex { //flexbox
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
-.header-img {
-    border-top-left-radius: 1.5625rem;
-    border-top-right-radius: 1.5625rem;
+    width: 20.625rem;
+    height: 35.625rem;
+
+    .header-img {
+        max-width: 100%;
+        border-top-left-radius: 1.5625rem;
+        border-top-right-radius: 1.5625rem;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+
+    background-color: white;
+    border-radius: 1.5625rem;
 }
 
 .osHeader {
-    margin-top: 2.625rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
     font-weight: 900;
-    font-size: 1.75rem;
+    font-size: 1.35rem;
 }
 
 .description {
-    margin-left: 4.75rem;
-    margin-right: 4.75rem;
-    margin-bottom: 1rem;
+    margin: 2rem;
     font-size: 1rem;
     font-weight: 500;
     color: $desaturateBlue;
@@ -25,8 +39,8 @@
 
 .annual-plan-container {
     background-color: $veryPaleBlue;
-    width: 22.1875rem;
-    height: 6.25rem;
+    width: 17.5rem;
+    height: 5.3125rem;
     display: flex;
     align-items: center;
     border-radius: 1rem;
@@ -43,19 +57,19 @@
 
         .ap {
             font-weight: 900;
-            font-size: 1rem;
+            font-size: .9rem;
         }
 
         .price {
             font-weight: 500;
-            font-size: 1rem;
+            font-size: .9rem;
             color: $desaturateBlue
         }
 
     }
 
     button {
-        margin-right: 2rem;
+        margin-right: .5rem;
         margin-left: auto;
         border: none;
         background: none;
@@ -77,10 +91,11 @@
 }
 
 .btn {
-    margin: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     background-color: $brightBlue;
     height: 3.125rem;
-    width: 22.1875rem;
+    width: 17.5rem;
     color: white;
     font-family: $font;
     font-weight: 900;
@@ -96,9 +111,57 @@
 .cancel {
     color: $desaturateBlue;
     font-weight: 700;
+    font-size: 0.875rem;
 }
 
 .cancel:hover {
     cursor: pointer;
     color: black;
+}
+
+@media (min-width: 87.5rem) { //desktop changes
+
+    body {
+        background-image: url("/app/images/pattern-background-desktop.svg");
+    }
+
+    .flex {
+        width: 28.1875rem;
+        height: 43rem;
+    }
+
+    .osHeader {
+        font-weight: 900;
+        font-size: 1.75rem;
+    }
+
+    .description {
+        margin-left: 4rem;
+        margin-right: 4rem;
+
+    }
+
+    .annual-plan-container {
+        background-color: $veryPaleBlue;
+        width: 22.1875rem;
+        height: 6.25rem;
+
+        .price-container {
+            .ap {
+                font-size: 1rem;
+            }
+            .price {
+                font-size: 1rem;
+            }
+        }
+
+        button {
+            margin-right: 2rem;
+        }
+    }
+
+    .btn {
+        margin: 2rem;
+        width: 22.1875rem;
+    }
 }
